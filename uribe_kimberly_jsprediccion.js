@@ -4,12 +4,16 @@ function myBirthYearFunc(){
 myBirthYearFunc()
 //al llamar a la función, me va a indicar que nací en 1980//
 
+
+
 function myBirthYearFunc(EntradaAñoNacimiento){
     console.log("Nací en " + EntradaAñoNacimiento);
 }
 myBirthYearFunc(2005)
 "naci en 2005"
 //el consol.log va a indicar que nací en 2005//
+
+
 
 function add(num1, num2){
     console.log("¡Sumando números!");
