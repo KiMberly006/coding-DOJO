@@ -13,7 +13,7 @@ function hello() {
 var result = hello();   
 console.log('result is', result);
   /* variable         Datos
-      result  =    hello, result is 15  */
+      result  =   hello(); = [hello, result is 15]  */
 
 
 function numPlus(num) {
@@ -23,7 +23,7 @@ function numPlus(num) {
 var result = numPlus(3);
 console.log('result is', result);
   /* variable                  Datos
-     result  =    num is 3, result is 18*/
+      result  =            numPlus(3); = [num is 3, result is 18}*/
 
 
 var num = 15;
@@ -35,8 +35,9 @@ function logAndReturn(num2){
 var result = logAndReturn(10);
 console.log(result);
 console.log(num);
-/* varibles              datos
-    result      =   [15,10,10,15] */
+/* varibles              Datos
+     num                15;
+    result      =    logAndReturn(10); =  [15,10,10,15] */
 
 
 var num = 15;
@@ -48,7 +49,9 @@ function timesTwo(num2){
 var result = timesTwo(10);
 console.log(result);
 console.log(num);
-/* [15, 10, 20, 15] */
+/* variable          Datos 
+     num       =      15;
+     result   =      timesTwo(10); = [15, 10, 20, 15] */
 
 
 function timesTwoAgain(num) {
@@ -59,7 +62,7 @@ function timesTwoAgain(num) {
 var result = timesTwoAgain(3) + timesTwoAgain(5);
 console.log('result is', result);
 /* variable         Datos   
-      y           num is 3, num is 5, result is 16  */
+      y           timesTwoAgain(3) + timesTwoAgain(5); = [result is 16] */
 
 function sumNums(num1, num2) {  
     return num1+num2;
@@ -88,7 +91,8 @@ result = [2,5,3,8]
 var result = sumNums(2,3) + sumNums(3,5);
 console.log('result is', result);
 /*  vatiable              Datos
-       result  =    result is 13, sum is 5, sum is 8 */ 
+       sum       =       num1 + num2;
+       result  =       sumNums(2,3) + sumNums(3,5);*/
 
 
 function sumNums(num1, num2) {
@@ -98,7 +102,6 @@ function sumNums(num1, num2) {
 }
 var result = sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3));
 console.log('result is', result);
-/* variable        Datos 
-       result  =   result is 19, sum is 5, sum is 3, sum is 6, sum is 3, sum is 5, sum is 8 */
-
-
+/* variable                     Datos 
+    sum          =        num1 + num2; 
+   result              sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3));*/
